@@ -1,6 +1,5 @@
 //                 Javascript Practice:
 //----------------------------------------------------------------
-
 //else if ladder
 
 /* let mark = 32;
@@ -21,7 +20,6 @@
     }
  */
 //----------------------------------------------------------------
-
 //Switch Statement
 
 /* let trafficLight = "over speed";
@@ -37,7 +35,6 @@ switch( trafficLight ){
     break;
 } */
 //----------------------------------------------------------------
-
 //Nested If:
 
 
@@ -67,7 +64,6 @@ else{
 } */
 
 //----------------------------------------------------------------
-
 //for loop
 
 /* for( let i=1: i,=10; i++){
@@ -76,7 +72,6 @@ else{
 } */
 
 //----------------------------------------------------------------
-
 //while loop:
 
 /* let num=1234;
@@ -89,9 +84,7 @@ while( num>0){
 console.log(sum); */
 
 //----------------------------------------------------------------
-
 //do while
-
 
 /* for( let i=1; i<=20;i++ ){
     if( i%2 == 0 ){
@@ -104,7 +97,6 @@ console.log(sum); */
 } */
 
 //----------------------------------------------------------------
-
 //function:
 
 /* function user(uName,uAge) {
@@ -115,7 +107,6 @@ console.log(sum); */
 user("praba",15) */
 
 //----------------------------------------------------------------
-
 //arrrow function:
 
 /* let usrName = (a,b) => console.log(a+b);
@@ -127,7 +118,6 @@ let finalOutput = userName(firstName)
 console.log(finalOutput); */
 
 //----------------------------------------------------------------
-
 //HOF & CallbackFunction::
 
 /* function add(callback,a,b){
@@ -140,9 +130,9 @@ function sub(c,d){
 add(sub,2,4); */
 
 //----------------------------------------------------------------
-
-/* // function to calculate area of the circle
-const radius = [1, 2, 3];
+// function to calculate radius of the circle:
+ 
+/*const radius = [1, 2, 3];
 const calculateArea =  function (radius) {
     const output = [];
     for(let i = 0; i< radius.length; i++){
@@ -160,7 +150,9 @@ const calculateDiameter =  function (radius) {
 }
 console.log(calculateArea(radius));
 console.log(calculateDiameter(radius)) */
+
 //----------------------------------------------------------------
+// function to calculate area of the circle:
 
 /* const radius = [1, 2, 3];
 const area = function(radius){
@@ -178,7 +170,172 @@ const calculate = function(radius, logic){
 }
 console.log(calculate(radius, area));
 console.log(calculate(radius, diameter)); */
+
 //----------------------------------------------------------------
+//function to reverse an array:
+
+/* let arr = [1,5,2,8,4,9,3]
+arr.reverse()
+console.log(arr); */
+//----------------------------------------------------------------
+//object:
+
+/* let userProfile = {
+    userName : "Kesavan",
+    age : 30,
+    hairColor : "black",
+    eyeColor : "brown",
+    eat : function(){
+        console.log( "Im gonna eat ice cream" );
+        return "Vanilla Ice Cream"
+    }
+}
+
+console.log( userProfile.hairColor, userProfile.age );
+console.log( userProfile.userName );
+let iceCreamType = userProfile.eat();
+console.log( iceCreamType ); */
+//----------------------------------------------------------------
+// for of loop:
+
+/* let arr = [10,100,1000,10000]
+
+for( let val of arr  ){
+    console.log( val );
+} */
+//----------------------------------------------------------------
+//for in loop:
+
+/* let person1 = {
+    uName : "Kesavan",
+    hobbies : [ "Cricket", "Video Maker", "Editor" ],
+    familyDetails : {
+        totalMembers : 5,
+        siblings : [ "a", "b", "c"  ]
+    },
+    walk(){
+        console.log( "Im going to home" );
+    }
+}
+
+
+for( let key in person1  ){
+    console.log( person1[key] ); */
+//----------------------------------------------------------------
+//array methods:
+
+/* let arr = [100,200,300,400]
+
+let poppedVal = arr.pop()
+console.log(poppedVal, arr );
+
+arr.push( 500,550,600 )
+console.log( arr );
+
+let firstVal = arr.shift()
+console.log( firstVal,  arr );
+
+arr.unshift( -2,-1,0,10,20 )
+console.log( arr )
+
+let newArr = [10,20,30,40]
+newArr.splice(1, 2, ("newVal", true, [11,12]),"secondVal")
+newArr.splice( 0, 0, 100,200,300  )
+newArr.splice( -1, 0, 500,600,700  )
+
+console.log( newArr ); */
+//----------------------------------------------------------------
+//Concat method
+
+/* let arr = [1,2,3,4];
+let arr1 = [4,5,6,7];
+let newArr = arr.concat(arr1);
+let newArr1 = arr.concat(10,20,30)
+let newArr2 = [].concat(arr);
+
+arr[0] = 111;
+
+console.log( newArr, newArr1, newArr2, arr ); */
+//----------------------------------------------------------------
+//Slice Method
+
+/* let newArr = [10,2,3,4,5,6,7];
+let slicedVal = newArr.slice();
+newArr[0] = 101
+
+let slicedVal1 = newArr.slice(1);
+let slicedVal2 = newArr.slice(1, 4); //( start, end-1 ) ( 1, 4-1 )
+let slicedVal3 = newArr.slice( 0,3); 
+console.log( slicedVal, slicedVal1, slicedVal2, slicedVal3 );
+ */
+//----------------------------------------------------------------
+//Flat method
+
+/* let arr = [1,2,3,[4,[5,6,[40,50, [70,80] ]]]]
+let newArr = arr.flat(2)
+let newArr1 = arr.flat(Infinity)
+
+console.log( arr, newArr, newArr1 );
+console.log(  newArr1 ); */
+//----------------------------------------------------------------
+//Fill method
+
+/* let arr = [10,20,30]
+
+arr.fill( 101, 0, 2 )
+arr.fill( 103, 2, 5 )
+
+console.log( arr ); */
+//----------------------------------------------------------------
+//Sort in ASCCI Order:
+
+/* let arr = [5,1,4,6,2,8,10,20,15,45,101,111,26,345, "&", " "]
+arr.sort()
+console.log( arr );
+
+let arr1 = [10,20,30,40,50]
+arr1.reverse()
+console.log( arr1 );
+console.log( arr1.includes( 11) ); */
+//----------------------------------------------------------------
+//Find index:
+
+/* let arr = [10,20,30,20,40,50,10]
+
+// let newIndex = arr.indexOf( 10, 2 )
+// let newIndex = arr.indexOf( 20, -4 )
+// let newIndex = arr.indexOf( 20,0)
+
+// console.log( newIndex );
+
+// let findIndexFromLast = arr.lastIndexOf(10)
+// let findIndexFromLast = arr.lastIndexOf(20)
+// let findIndexFromLast = arr.lastIndexOf(20,-5)
+ let findIndexFromLast = arr.lastIndexOf(20,0)
+
+console.log( findIndexFromLast ); */
+//----------------------------------------------------------------
+//ForEach VS Map:
+
+/* let fruits = [ "Apple", "WaterMelon", "MuskMelon", "Banana" ]
+
+// fruits.forEach( printFruit )
+// function printFruit(currentElement, index, totalArray){
+//     console.log( currentElement, index, totalArray );    
+// }
+
+fruits.map( function(currentEle, index, totalArr){
+    console.log( currentEle, index, totalArr );
+}  ) */
+//----------------------------------------------------------------
+
+
+
+
+
+
+
+
 
 
 
